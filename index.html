@@ -3,73 +3,357 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mohammed Zain Amjad | Portfolio</title>
+
+  <meta
+    name="description"
+    content="Portfolio of Mohammed Zain Amjad — Computer Science and Engineering student building practical solutions in IoT, robotics, and web development."
+  >
+
+  <meta name="theme-color" content="#07111f">
+
+  <title>Mohammed Zain Amjad | CSE Student & Builder</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header class="hero">
-    <p class="tagline">CSE Student | IoT • Robotics • Web Development</p>
-    <h1>Mohammed Zain Amjad</h1>
-    <p>Building practical solutions through technology, hackathons, and robotics.</p>
-    <a href="#projects" class="button">View My Work</a>
-  </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am a 2nd-year Computer Science and Engineering student at Sri Siddhartha
-      School of Engineering. I enjoy building practical technology solutions and
-      participating in hackathons, robotics competitions, and innovation challenges.
-    </p>
-  </section>
+  <!-- Navigation -->
+  <nav class="navbar" aria-label="Primary navigation">
+    <a href="#home" class="logo" aria-label="Go to homepage">
+      MZA<span>.</span>
+    </a>
 
-  <section id="projects">
-    <h2>Featured Projects</h2>
+    <button class="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false">
+      ☰
+    </button>
 
-    <article class="card">
-      <h3>FloodGuard AI</h3>
-      <p class="status">Status: Prototype / Work in Progress</p>
-      <p>
-        A low-cost IoT-based smart drainage monitoring solution designed to detect
-        probable drain blockages and identify flood-prone zones early.
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <header class="hero" id="home">
+      <div class="hero-content reveal">
+        <p class="eyebrow">COMPUTER SCIENCE & ENGINEERING STUDENT</p>
+
+        <h1>
+          Mohammed Zain<br>
+          <span>Amjad.</span>
+        </h1>
+
+        <p class="hero-description">
+          I build practical, people-focused technology solutions through
+          <strong>IoT, robotics, web development, hackathons, and innovation challenges.</strong>
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="button primary-button">
+            Explore My Work <span aria-hidden="true">→</span>
+          </a>
+
+          <a href="#contact" class="button secondary-button">
+            Let's Connect
+          </a>
+        </div>
+
+        <div class="hero-tags" aria-label="Key skills">
+          <span>IoT</span>
+          <span>Robotics</span>
+          <span>Python</span>
+          <span>C++</span>
+          <span>Web Development</span>
+        </div>
+      </div>
+
+      <!-- Add a real clear professional photo of yourself in assets/profile.jpg -->
+      <div class="hero-photo-wrap reveal">
+        <div class="hero-glow glow-one"></div>
+        <div class="hero-glow glow-two"></div>
+
+        <img
+          src="assets/profile.jpg"
+          alt="Mohammed Zain Amjad"
+          class="hero-photo"
+        >
+
+        <div class="photo-badge">
+          <span class="online-dot"></span>
+          Bengaluru, India
+        </div>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="reveal">
+        <p class="section-label">01 / ABOUT ME</p>
+        <h2>Building technology that solves real problems.</h2>
+      </div>
+
+      <div class="about-grid">
+        <p class="reveal">
+          I am a second-year Computer Science and Engineering student at
+          <strong>Sri Siddhartha School of Engineering</strong>. I am passionate
+          about converting everyday challenges into practical and accessible
+          technology solutions.
+        </p>
+
+        <p class="reveal">
+          My journey includes hackathons, robotics competitions, field research,
+          innovation challenges, and team-based projects. I enjoy learning by
+          building, testing ideas, collaborating with people, and improving
+          solutions using real feedback.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-box reveal">
+          <span class="skill-number">01</span>
+          <h3>Programming</h3>
+          <p>C, C++, Python, SQL, JavaScript</p>
+        </article>
+
+        <article class="skill-box reveal">
+          <span class="skill-number">02</span>
+          <h3>Development</h3>
+          <p>Web dashboards, responsive websites, Git & GitHub</p>
+        </article>
+
+        <article class="skill-box reveal">
+          <span class="skill-number">03</span>
+          <h3>Engineering</h3>
+          <p>IoT concepts, robotics, sensors, debugging</p>
+        </article>
+
+        <article class="skill-box reveal">
+          <span class="skill-number">04</span>
+          <h3>Collaboration</h3>
+          <p>Teamwork, research, presentations, problem-solving</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section dark-section">
+      <div class="reveal">
+        <p class="section-label">02 / FEATURED WORK</p>
+        <h2>Projects with a purpose.</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- FloodGuard -->
+        <article class="project-card featured-project reveal">
+          <div class="project-image-container">
+            <!-- Use a real FloodGuard photo: prototype, sensor setup, field research, poster, or presentation -->
+            <img
+              src="assets/floodguard.jpg"
+              alt="FloodGuard project prototype or presentation"
+              class="project-image"
+            >
+            <span class="image-tag">PROTOTYPE / WIP</span>
+          </div>
+
+          <div class="project-card-content">
+            <div class="project-card-top">
+              <span class="project-number">01</span>
+              <span class="status prototype">Prototype / Work in Progress</span>
+            </div>
+
+            <h3>FloodGuard</h3>
+
+            <p class="project-subtitle">
+              Smart drainage monitoring for early flood prevention.
+            </p>
+
+            <p>
+              FloodGuard is a low-cost IoT-based smart drainage monitoring concept
+              designed to detect probable drain blockages, monitor water levels,
+              and identify flood-prone locations early through a live dashboard.
+            </p>
+
+            <ul class="project-points">
+              <li>Inspired by urban flash-flooding and blocked-drain challenges</li>
+              <li>Built around sensor-based monitoring and location-based alerts</li>
+              <li>Shaped through field visits and discussions with stakeholders</li>
+            </ul>
+
+            <div class="recognition-box">
+              <p>Recognition</p>
+              <strong>2nd Place among 58 teams — SocioSpark 2K26</strong>
+              <strong>Top 100 Teams Nationwide — Samsung Solve for Tomorrow 2026</strong>
+            </div>
+
+            <!-- Add only after you create and upload your real FloodGuard repository -->
+            <!-- <a href="https://github.com/MohammedZainAmjad/floodguard-ai" class="project-link" target="_blank" rel="noopener noreferrer">View Project →</a> -->
+          </div>
+        </article>
+
+        <!-- SpaceTrash -->
+        <article class="project-card reveal">
+          <div class="project-card-top">
+            <span class="project-number">02</span>
+            <span class="status concept">Concept Project</span>
+          </div>
+
+          <h3>SpaceTrash Hack</h3>
+
+          <p class="project-subtitle">
+            Sustainable waste management for future Mars missions.
+          </p>
+
+          <p>
+            A sustainable-system concept explored during NASA Space Apps / SpaceTrash
+            Hack, focused on managing, reusing, recycling, and repurposing inorganic
+            waste during long-duration human missions to Mars.
+          </p>
+
+          <ul class="project-points">
+            <li>Focus on closed-loop resource management</li>
+            <li>Explores waste-to-resource approaches for space habitats</li>
+            <li>Developed through research, teamwork, and solution design</li>
+          </ul>
+        </article>
+
+        <!-- Portfolio -->
+        <article class="project-card reveal">
+          <div class="project-card-top">
+            <span class="project-number">03</span>
+            <span class="status live">Live Project</span>
+          </div>
+
+          <h3>Personal Portfolio</h3>
+
+          <p class="project-subtitle">
+            A responsive website documenting my learning journey and work.
+          </p>
+
+          <p>
+            This portfolio is built using HTML, CSS, and JavaScript to present my
+            projects, technical skills, hackathon experiences, and achievements in
+            one clear place.
+          </p>
+
+          <ul class="project-points">
+            <li>Responsive design for mobile and desktop</li>
+            <li>Clear labels for concept, prototype, WIP, and live work</li>
+            <li>Built and maintained as part of my GitHub portfolio journey</li>
+          </ul>
+
+          <a
+            href="https://github.com/MohammedZainAmjad/personal-portfolio"
+            class="project-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View GitHub Repository →
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements" class="section">
+      <div class="reveal">
+        <p class="section-label">03 / ACHIEVEMENTS</p>
+        <h2>Learning through competition.</h2>
+      </div>
+
+      <div class="achievement-list">
+
+        <article class="achievement-item reveal">
+          <span class="achievement-rank gold">01</span>
+          <div>
+            <h3>1st Place — Line Follower</h3>
+            <p>PES College of Engineering, Mandya</p>
+          </div>
+        </article>
+
+        <article class="achievement-item reveal">
+          <span class="achievement-rank bronze">02</span>
+          <div>
+            <h3>3rd Place — RoboCup</h3>
+            <p>VNIT Nagpur</p>
+          </div>
+        </article>
+
+        <article class="achievement-item reveal">
+          <span class="achievement-rank bronze">03</span>
+          <div>
+            <h3>3rd Place — Crapido</h3>
+            <p>Technical competition</p>
+          </div>
+        </article>
+
+        <article class="achievement-item reveal">
+          <span class="achievement-rank">04</span>
+          <div>
+            <h3>5th Place — LaserLit</h3>
+            <p>VNIT Nagpur</p>
+          </div>
+        </article>
+
+        <article class="achievement-item reveal">
+          <span class="achievement-rank">05</span>
+          <div>
+            <h3>Hackathons & Innovation Challenges</h3>
+            <p>Samsung Solve for Tomorrow, SkyHack, Techathon-6, NASA Space Apps / SpaceTrash Hack</p>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="achievement-note reveal">
+        Also participated in the 27th VTU State-Level Inter-Collegiate Athletic
+        Meet 2025–26 as a football player.
       </p>
-      <p>
-        <strong>Recognition:</strong> 2nd Place among 58 teams at SocioSpark 2K26
-        and Top 100 nationwide in Samsung Solve for Tomorrow 2026.
-      </p>
-    </article>
+    </section>
 
-    <article class="card">
-      <h3>SpaceTrash Hack</h3>
-      <p class="status">Status: Concept Project</p>
-      <p>
-        A sustainable concept for managing, reusing, and recycling inorganic waste
-        for future Mars missions.
-      </p>
-    </article>
-  </section>
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+      <div class="reveal">
+        <p class="section-label">04 / CONTACT</p>
+        <h2>Let's build something meaningful.</h2>
 
-  <section id="achievements">
-    <h2>Highlights</h2>
-    <ul>
-      <li>1st Place — Line Follower, PES College of Engineering, Mandya</li>
-      <li>3rd Place — RoboCup, VNIT Nagpur</li>
-      <li>3rd Place — Crapido</li>
-      <li>5th Place — LaserLit, VNIT Nagpur</li>
-      <li>Participant — SkyHack, Techathon-6, and NASA Space Apps / SpaceTrash Hack</li>
-    </ul>
-  </section>
+        <p class="contact-intro">
+          I am open to internships, hackathons, collaborative projects, learning
+          opportunities, and conversations around technology and innovation.
+        </p>
 
-  <section id="contact">
-    <h2>Connect</h2>
-    <p>Email: gogglezain@gmail.com</p>
-    <p>LinkedIn: https://www.linkedin.com/in/mohammed-zain-amjad-182b39364</p>
-    <p>GitHub: https://github.com/MohammedZainAmjad</p>
-  </section>
+        <div class="contact-links">
+          <a href="mailto:gogglezain@gmail.com">Email Me ↗</a>
+
+          <a
+            href="https://www.linkedin.com/in/mohammed-zain-amjad-182b39364"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn ↗
+          </a>
+
+          <a
+            href="https://github.com/MohammedZainAmjad"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <footer>
-    <p>© 2026 Mohammed Zain Amjad</p>
+    <p>Designed and built by Mohammed Zain Amjad · © 2026</p>
   </footer>
 
   <script src="script.js"></script>
