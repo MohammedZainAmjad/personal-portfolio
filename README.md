@@ -14,4 +14,4 @@ Personal portfolio website of Mohammed Zain Amjad.
 - Git and GitHub
 ## Project Status
 
-Portfolio Version: 1.0
+Portfolio Version: 2.0
